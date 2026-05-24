@@ -9,7 +9,7 @@ def train_model():
 
     df = pd.get_dummies(df, drop_first=True)
 
-    y = df.pop("expenses")
+    y = df.pop("charges")
     X = df
 
     train_X, test_X, train_y, test_y = train_test_split(
